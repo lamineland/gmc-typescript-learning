@@ -1,0 +1,20 @@
+{
+  "name": "gmc-slack-bot",
+  "version": "1.0.0",
+  "description": "Simple Slack bot using the Slack Events API and Bolt: logs channel messages and responds to the custom /hello command",
+  "type": "module",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "node --watch bot.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^3.22.0",
+    "dotenv": "^16.4.5"
+  }
+}
